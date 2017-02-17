@@ -1,25 +1,15 @@
-% ----------------------------------------------------------------------%
-%	By Alessandro Plasmati (http://aleplasmati.comuv.com) - 05/27/2009	%
-%	Modified by Sean Anderson (http://www.roguephysicist.org)			%
-%	Licensed under the Creative Commons Attribution 3.0 Unported		%
-%	Share, change, spread, and have fun!								%
-%	http://creativecommons.org/licenses/by/3.0/							%
-% ----------------------------------------------------------------------%
-
 \documentclass[letterpaper,10pt]{article}
 \usepackage[hmargin=3.5cm, vmargin=2.25cm]{geometry} 
 \usepackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-% \usepackage{xunicode}
-% \usepackage{fontspec}
 \usepackage{parskip}
 \usepackage[absolute]{textpos}
+\usepackage[spanish]{babel}
 
-%-----------------------------Fonts---------------------------------%
-% \defaultfontfeatures{Mapping=tex-text}
-% \setmainfont[Mapping=tex-text]{Linux Libertine O}		% http://www.linuxlibertine.org/
-% \setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Linux Biolinum O}	% http://www.linuxlibertine.org/
-% \setmonofont[Scale=MatchLowercase]{FreeMono}			% http://www.gnu.org/software/freefont/
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 %--------------------Link colors and pdf info-----------------------%
 \usepackage{hyperref}
@@ -39,9 +29,8 @@
 {\color{headings}\scshape\sffamily\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
 
-\pagestyle{empty}
-
 \begin{document}
+
 % Watermark
 \begin{textblock}{1}(0,-9.5)
 \rotatebox{90}{\parbox{500mm}{\color{black}\sffamily \'Ultima actualizaci\'on: \today.}}
@@ -52,78 +41,98 @@
 {\Large\color{headings}\sffamily{Curriculum Vit\ae}}
 \end{center}
 
-\section{Informaci\'on Personal}
+\section{Personal Information}
 \begin{tabular}{R{4cm}l}
-\textsc{Lugar y fecha de }	&	\\
-\textsc{nacimieto:}			&	Le\'on, Guanajuato, Mex. |  2 de enero de 1984 \\
-\textsc{Direcci\'on:}		&	Plaza Sn. Francisco 209, Haciendas el Rosario 37125, \\
-							& 	Le\'on, Guanajuato, Mexico \\
-\textsc{Celular:}			&	+52 (477) 670 0687\\
-\textsc{email:}				&	\href{mailto:reinaldo.zapata.p@gmail.com}{reinaldo.zapata.p@gmail.com}
+\textsc{Place and date of}  &   \\
+\textsc{birth:}             &   Le\'on, Guanajuato, Mex. |  January 2, 1984 \\
+\textsc{Address:}           &   Plaza Sn. Francisco 209, Haciendas el Rosario 37125, \\
+                            &   Le\'on, Guanajuato, M\'exico \\
+\textsc{Cell phone number:} &   +521 (477) 670 0687\\
+\textsc{email:}             &   \href{mailto:reinaldo.zapata.p@gmail.com}{reinaldo.zapata.p@gmail.com}
 \end{tabular}
 
-\section{Experiencia Laboral}
+\section{Work Experience}
 \begin{tabular}{R{4cm}|p{11cm}}
-\textsc{Ago. 2010 --}	&	Becario -- Investigaci\'on \\
-						&	\href{http://www.cio.mx/}{Centro de Investigaciones en \'Optica A.C.}; Le\'on, Guanajuato, Mex.\\
-						&	\footnotesize{C\'alculo de propiedades \'opticas de materiales nanoestructurados: grafeno hydrogenado y nanotubos de nitruro de boro.}\\
-						&	\footnotesize{Publicaci€on del art\'iculo \emph{\href{http://onlinelibrary.wiley.com/doi/10.1002/pssb.201670511/abstract}{Nonlinear optical responses in hydrogenated graphene structures}} en la revista \href{http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1521-3951}{\emph{Physca of Status Solidi (b)}}. Debido a la importancia del art\'iculo fue otorgada una de las portadas: \href{http://onlinelibrary.wiley.com/doi/10.1002/pssb.201670511/epdf}{ISSN 0370-1972Phys. Status Solidi B253 · No. 2 February189–408 (2016)}.} \\
-						&	\footnotesize{Ayudant\'ias a nivel maestr\'ia en las materias de Mec\'anica Cu\'antica y Electromagnetismo, dando clase y dise\~nando y aplicando ex\'amenes. Ayudant\'ia en la cuarta edición del evento \emph{J\'ovenes con Excelencia}: tutoría de 4 alumnos}\\
-						&	\footnotesize{Participaci\'on en el congreso \href{http://www.osiconference.org/osi2015/index.php}{OSI 11 (\emph{The International Conference on Optics of Surfaces and Interfaces})} con el p\'oster \emph{Optical Spin- and Current Injection and Second Harmonic Generation in Hydrogenated Graphene Structures}.}\\
-						\multicolumn{2}{c}{} \\
-\textsc{Ago. 2012 -- Jul. 2016 }	&	Docenete \\
-						&	\href{http://www.institutojassa.edu.mx/}{Instituto Jass\'a}; Le\'on, Guanajuato, Mex.\\
-						&	\footnotesize{Profesor de Matem\'aticas y F\'isica a nivel secundaria y bachilleratrespectivamente.}\\
-						\multicolumn{2}{c}{} \\
-\textsc{Abr. 2007 -- 2009}	&	Customer Care Representative\\
-							&	\href{http://www.teletech.com/worldwide/spanish}{Teletech}; Le\'on, Guanajuato, Mex.\\
-							&	\footnotesize{Representante de atenci\'on a clientes para la campa\~na biling\"ue \emph{Sprint together with Nextel}.}\\
-							\multicolumn{2}{c}{} \\
-\end{tabular}
-
-\section{Formaci\'on Acad\'emica}
-\begin{tabular}{R{4cm}|p{11cm}}
-					&	Doctorado en Ciencias (\'Optica) \\
-					&	\href{http://www.cio.mx/}{Centro de Investigaciones en \'Optica A. C.}; Le\'on, Guanajuato, Mex.\\
-					&	Estudios en curso.\\
-					\multicolumn{2}{c}{} \\
-
-\textsc{Dic. 2012 }	&	Maestr\'ia en Ciencias (\'Optica) \\
-					&	\href{http://www.cio.mx/}{Centro de Investigaciones en \'Optica A. C.}; Le\'on, Guanajuato, Mex.\\
-					&	Tesis: Optical Spin Injection in Graphane\\
-					\multicolumn{2}{c}{} \\
-
-\textsc{Ago. 2010 }	&	Lic. en F\'isica \\
-					&	\href{https://fisica.ugto.mx}{Divisi\'on de Ciencias e Ingenier\'ias}, \href{http://www.ugto.mx}{Universidad de Guanajuato}\\
-					&	Tesis: Interfer\'ometro Heterodino de Dos Haces Gaussianos para Perfilometr\'ia. Obtenci\'on del grado menci\'on laureada.\\
-					\multicolumn{2}{c}{} \\
+\textsc{Aug. 2016 --  } &   Teacher \\
+                        &   \href{http://www.leon.uia.mx}{Universidad Iberoamericana Le\'on}; Le\'on, Guanajuato, Mex.\\
+                        &   \footnotesize{Assigned subjects: }\\
+                        &\footnotesize{\qquad Physics: rotational movement,  relativity and waves; laboratory. }\\
+                        &\footnotesize{\qquad Electricity and Magnetism : electrostatics, electrodynamics (direct and alternating current), RC and RLC circuits, Maxwell's Laws; laboratory. }\\
+                        \multicolumn{2}{c}{} \\
+\textsc{Aug. 2010 --}   &   Researcher \\
+                        &   \href{http://www.cio.mx/}{Centro de Investigaciones en \'Optica A.C.}; Le\'on, Guanajuato, Mex.\\
+                        &   \footnotesize{Calculation of optical properties of nanostructured materials: hydrogenated graphene and boron-nitride nanotubes.}\\
+                        &   \footnotesize{Participation in the congress \href{http://riaooptilas.cefop.cl/en/}{RIAO/OPTILAS (IX Iberoamerican Meeting on Optics and XII Iberoamerican Meeting on Optics, Lasers and Applications)} with the poster Nonlinear Optical Responses in Hydrogenated Graphene Structures.}\\
+                        &   \footnotesize{Assistant teacher at master degree in Quantum Mechanics and Electromagnetism: teaching, exams designing. Assistant in the 4th edition of \emph{J\'ovenes con Excelencia}: mentor of four students.}\\
+                        &   \footnotesize{Publication of the article \emph{\href{http://onlinelibrary.wiley.com/doi/10.1002/pssb.201670511/abstract}{Nonlinear Optical Responses in Hydrogenated Graphene Structures}} in the german journal \href{http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1521-3951}{\emph{Physca of Status Solidi (b)}}. Due to the relevance of the research we obtained the journal back cover: \href{http://onlinelibrary.wiley.com/doi/10.1002/pssb.201670511/epdf}{ISSN 0370-1972Phys. Status Solidi B253 · No. 2 February189–408 (2016)}.} \\
+                        &   \footnotesize{Participation in the congress \href{http://www.osiconference.org/osi2015/index.php}{OSI 11 (\emph{The International Conference on Optics of Surfaces and Interfaces})} with the poster \emph{Optical Spin and Current Injection and Second Harmonic Generation in Hydrogenated Graphene Structures}.}\\
+                        &   \footnotesize{Lab experience:}\\
+                        &   \footnotesize{\qquad Analogical and digital holography}\\
+                        &   \footnotesize{\qquad Spectroscopy}\\
+                        &   \footnotesize{\qquad Optical design}\\
+                        &   \footnotesize{\qquad Fiber optics and applications}\\
+                        &   \footnotesize{\qquad Interferometry and optical tests}\\
+                        \multicolumn{2}{c}{} \\
+\textsc{Aug. 2012 -- Jul. 2016 }    &   Teacher \\
+                        &   \href{http://www.institutojassa.edu.mx/}{Instituto Jass\'a}; Le\'on, Guanajuato, Mex.\\
+                        &   \footnotesize{Maths and physics teacher in highschool. }\\
+                        \multicolumn{2}{c}{} \\
+\textsc{Abr. 2007 -- 2009}  &   Customer Care Representative\\
+                        &   \href{http://www.teletech.com/worldwide/spanish}{Teletech}; Le\'on, Guanajuato, Mex.\\
+                        &   \footnotesize{Customer care representative in the campaign Sprint together with Nextel.}\\
+                            \multicolumn{2}{c}{} \\
 \end{tabular}
 
 \newpage
+\section{Formaci\'on Acad\'emica}
+\begin{tabular}{R{4cm}|p{11cm}}
+\textsc{Mar. 2017 } &   Doctorado en Ciencias (\'Optica) \\
+                        &   \href{http://www.cio.mx/}{Centro de Investigaciones en \'Optica A. C.}; Le\'on, Guanajuato, Mex.\\
+                        &   Estudios en curso, casi concluidos.\\
+                    \multicolumn{2}{c}{} \\
+
+\textsc{Dic. 2012 } &   Maestr\'ia en Ciencias (\'Optica) \\
+                        &   \href{http://www.cio.mx/}{Centro de Investigaciones en \'Optica A. C.}; Le\'on, Guanajuato, Mex.\\
+                        &   Tesis: Optical Spin Injection in Graphane\\
+                    \multicolumn{2}{c}{} \\
+
+\textsc{Aug. 2010 } &   Lic. en F\'isica \\
+                        &   \href{https://fisica.ugto.mx}{Divisi\'on de Ciencias e Ingenier\'ias}, \href{http://www.ugto.mx}{Universidad de Guanajuato}\\
+                        &   Tesis: Interfer\'ometro Heterodino de Dos Haces Gaussianos para Perfilometr\'ia. Obtenci\'on del grado menci\'on laureada.\\
+                    \multicolumn{2}{c}{} \\
+\end{tabular}
+
 \section{\textsc{Habilidades}}
-	\begin{tabular}{R{4cm} p{10cm}}
-		Experto:	&	Hardware computacional, \LaTeX, OS X (mac), Linux, Windows, Paquetería Office y Libre Office\\ 
-		Intermedio:	&	Fortran, OpenMP, MPI, Android, iOS\\
-	\end{tabular}
+    \begin{tabular}{R{4cm} p{10cm}}
+        Experto:    &   Hardware computacional, \LaTeX, OS X (mac), Linux, Windows, Paquetería Office y Libre Office\\ 
+        Intermedio: &   Fortran, OpenMP, MPI, Android, iOS\\
+    \end{tabular}
 
 \section{Idiomas}
-	\begin{tabular}{R{4cm}l}
-		\textsc{Ingl\'es}:	&	100\% lectura, 80\% escritura, 80\% conversación \\
-		\textsc{Espa\~nol}:	&	Lengua nativa \\
-	\end{tabular}
+    \begin{tabular}{R{4cm}l}
+        \textsc{Ingl\'es}:  &   100\% lectura, 80\% escritura, 80\% conversación \\
+        \textsc{Espa\~nol}: &   Lengua nativa \\
+    \end{tabular}
 
 \section{Intereses y Actividades}
-	\begin{tabular}{l|l}
-		Ciencia y tecnolog\'ia 			&	Lectura\\
-		Software Libre					&	M\'usica\\
-		Investigaci\'on cient\'ifica	&	Cocina  \\
-		C\'omputo de alto desempe\~no	&	Arte\\
-		Computaci\'on					&	Deporte\\													
-	\end{tabular}
+    \begin{tabular}{l|l}
+        Ciencia y tecnolog\'ia          &   Lectura\\
+        Software Libre                  &   M\'usica\\
+        Investigaci\'on cient\'ifica    &   Cocina  \\
+        C\'omputo de alto desempe\~no   &   Arte\\
+        Computaci\'on                   &   Deporte\\                                                   
+    \end{tabular}
 
 \begin{textblock}{1}(0,-9.5)
 \rotatebox{90}{\parbox{500mm}{\color{black}\sffamily \'Ultima actualizaci\'on: \today.}}
 \end{textblock}
 
-
 \end{document}
+
+
+
+
+
+
+
+
